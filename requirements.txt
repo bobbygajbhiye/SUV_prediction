@@ -1,5 +1,4 @@
 Flask
-pickle
 gunicorn
 pandas
 scikit-learn
