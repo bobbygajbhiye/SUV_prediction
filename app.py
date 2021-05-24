@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 
-model=pickle.load(open(r'C:\Users\bobby.gajbhiye\Desktop\dev\Flask\SUV_Bobby\SUV_model.pkl','rb'))
+model=pickle.load(open('SUV_model.pkl','rb'))
 
 app = Flask(__name__)
 @app.route('/output',methods=['POST'])

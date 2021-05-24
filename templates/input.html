@@ -1,7 +1,7 @@
 <html>
 <body>
 <h1>Input page</h1>
-<form action="http://127.0.0.1:5000/output" method="post">
+<form action="{{ url_for('post_fun') }}" method="post">
 <p>Gender: <input type = "text" name="gen" /></p>
 <p>Age: <input type = "text" name="a" /></p>
 <p>Salary: <input type = "text" name="sal" /></p>
