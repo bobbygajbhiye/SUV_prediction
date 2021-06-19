@@ -9,5 +9,5 @@ K Nearest Neighbors, Support Vector Machines and Decision Tree Classifier models
 
 App has been deployed to Heroku.
 
-Please use below url to access -
-https://bobby-simple-suv.herokuapp.com
+Please use the url to check -
+https://suv-prediction.herokuapp.com/
