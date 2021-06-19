@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from sklearn.preprocessing import StandardScaler
 import pickle
 
 model=pickle.load(open('SUV_model.pkl','rb'))
@@ -9,7 +10,7 @@ def post_fun():
     gender=int(request.form['gen'])
     age=int(request.form['a'])
     salary=int(request.form['sal'])
-    pred=model.predict([[gender,age,salary]])
+    pred=model.predict(StandardScaler().fit_transform([[gender,age,salary]]))
     return render_template('output.html',prediction=pred)
 
 @app.route('/')
