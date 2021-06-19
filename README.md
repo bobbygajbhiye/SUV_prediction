@@ -1,4 +1,4 @@
-# simple_suv
+# SUV_prediction
 Explore dataset to predict the category of people who might be interested to purchase the newly launched suv in the market.
 
 Data analysis on Age and Salary over SUV Purchase.
